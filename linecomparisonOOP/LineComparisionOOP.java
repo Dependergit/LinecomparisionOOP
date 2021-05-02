@@ -7,11 +7,14 @@ public class LineComparisionOOP
         System.out.println("Welcome to linecomparisionOOP program");
 	 forlinefunctionsoop obj1 = new forlinefunctionsoop();
          obj1.functionforlines();
+	 obj1.functioncheckequallines();
 }
 class forlinefunctionsoop
 {
     double length1;
     double length2;
+    String line1;
+    String line2;
     public void functionforlines()
     {
         double x1, y1, x2, y2;
@@ -32,4 +35,11 @@ class forlinefunctionsoop
          length2 = (x2-x1)*(x2-x1)+(y2-y1)*(y2-y1);
         System.out.println(length2);
 
+    }
+public void functioncheckequallines()
+    {
+        // uc-2 this equals method gives true false value
+         line1 = String.valueOf(length1);
+         line2 = String.valueOf(length2);
+        System.out.println(line1.equals(line2));
     }
